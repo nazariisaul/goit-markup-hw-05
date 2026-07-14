@@ -637,44 +637,67 @@
         </p>
 
         <form action="" class="modal-form">
-          <fieldset class="modal-fieldset">
-            <label class="modal-form-label">
-              Name
-              <input
-                type="text"
-                name="username"
-                class="modal-form-input"
-                required
-                autofocus
-              />
-            </label>
-            <label class="modal-form-label">
-              Phone
-              <input
-                type="tel"
-                name="usertel"
-                class="modal-form-input"
-                required
-              />
-            </label>
-            <label class="modal-form-label">
-              Email
-              <input
-                type="email"
-                name="usere-mail"
-                class="modal-form-input"
-                required
-              />
-            </label>
-            <label class="modal-form-label">
-              Comment
-              <textarea
-                name="comment"
-                id=""
-                placeholder="Text input"
-                class="modal-form-textarea"
-              ></textarea>
-            </label>
+          <fieldset class="modal-fieldset-main">
+            <fieldset class="modal-fieldsets">
+              <label class="modal-form-label">
+                Name
+                <input
+                  type="text"
+                  name="username"
+                  class="modal-form-input"
+                  required
+                  autofocus
+                />
+              </label>
+              <label class="modal-form-label">
+                Phone
+                <input
+                  type="tel"
+                  name="usertel"
+                  class="modal-form-input"
+                  required
+                />
+              </label>
+              <label class="modal-form-label">
+                Email
+                <input
+                  type="email"
+                  name="usere-mail"
+                  class="modal-form-input"
+                  required
+                />
+              </label>
+              <label class="modal-form-label">
+                Comment
+                <textarea
+                  name="comment"
+                  id=""
+                  placeholder="Text input"
+                  class="modal-form-textarea"
+                ></textarea>
+              </label>
+            </fieldset>
+            <fieldset class="modal-fieldsets">
+              <div class="modal-form-checkbox-container">
+                <input
+                  type="checkbox"
+                  name="agreement"
+                  class="modal-form-input-checkbox"
+                  id=""
+                />
+                <label class="modal-form-label-checkbox">
+                  <span>
+                    <svg width="10" height="8" class="modal-check-svg">
+                      <use href="./images/icons.svg#check-mark" />
+                    </svg>
+                  </span>
+                  <span
+                    >I accept the terms and conditions of the
+                    <a href="#" class="modal-form-link">Privacy Policy</a></span
+                  >
+                </label>
+              </div>
+            </fieldset>
           </fieldset>
 
           <button type="submit" class="modal-send-btn">Send</button>
