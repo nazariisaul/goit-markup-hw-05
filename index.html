@@ -621,5 +621,65 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <button type="button" class="modal-close-btn">
+          <svg width="8" height="8" class="modal-close-svg">
+            <use href="./images/icons.svg#close" />
+          </svg>
+        </button>
+
+        <p class="modal-caption">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form action="" class="modal-form">
+          <fieldset class="modal-fieldset">
+            <label class="modal-form-label">
+              Name
+              <input
+                type="text"
+                name="username"
+                class="modal-form-input"
+                required
+                autofocus
+              />
+            </label>
+            <label class="modal-form-label">
+              Phone
+              <input
+                type="tel"
+                name="usertel"
+                class="modal-form-input"
+                required
+              />
+            </label>
+            <label class="modal-form-label">
+              Email
+              <input
+                type="email"
+                name="usere-mail"
+                class="modal-form-input"
+                required
+              />
+            </label>
+            <label class="modal-form-label">
+              Comment
+              <textarea
+                name="comment"
+                id=""
+                placeholder="Text input"
+                class="modal-form-textarea"
+              ></textarea>
+            </label>
+          </fieldset>
+
+          <button type="submit" class="modal-send-btn">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
