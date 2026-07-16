@@ -14,9 +14,9 @@
 
   background-color: rgba(46, 47, 66, 0.4);
 
-  opacity: 0;
+  /* opacity: 0;
   pointer-events: none;
-  visibility: hidden;
+  visibility: hidden; */
 
   transition: opacity 250ms ease-in-out;
 }
@@ -26,6 +26,8 @@
   pointer-events: auto;
   visibility: visible;
 }
+
+/* Modal container */
 
 .modal {
   display: flex;
@@ -47,6 +49,8 @@
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
 }
+
+/* Close btn */
 
 .modal-close-btn {
   display: flex;
@@ -79,6 +83,8 @@
   color: #fff;
   background-color: #404bbf;
 }
+
+/*  */
 
 .modal-caption {
   font-weight: 500;
@@ -114,6 +120,8 @@
   flex-direction: column;
   gap: 8px;
 }
+
+/* Text input */
 
 .modal-field-wrapper {
   display: flex;
@@ -161,9 +169,9 @@
   left: 16px;
   transform: translateY(-50%);
 
-  color: #2e2f42;
+  fill: #2e2f42;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   pointer-events: none;
 }
@@ -174,7 +182,7 @@
 }
 
 .modal-form-input:focus + .modal-input-icon {
-  color: #4d5ae5;
+  fill: #4d5ae5;
 }
 
 .modal-form-textarea {
@@ -210,6 +218,8 @@
   border-color: #4d5ae5;
 }
 
+/* CheckBox */
+
 .modal-form-checkbox-container {
   display: flex;
   align-items: center;
@@ -244,6 +254,7 @@
 .modal-check-svg {
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #f4f4fd;
 }
 
 .modal-checkbox-text {
@@ -280,6 +291,8 @@
   color: #4d5ae5;
 }
 
+/* Btn */
+
 .modal-send-btn {
   display: flex;
   align-items: center;
@@ -299,6 +312,8 @@
   padding: 16px 32px;
   width: 169px;
   height: 56px;
+
+  cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
